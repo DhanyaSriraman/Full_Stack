@@ -1,0 +1,25 @@
+<div align="center" style="margin-top : 100px">
+<h2 class="page-header">Register</h2>
+<form class="refForm"(submit)="onRegisterSubmit()">
+  <div class="form-group">
+    <label>Name</label>
+    <input type="text" [(ngModel)]="name" name="name" class="form-control" style="width: 500px;">
+  </div>
+  <div class="form-group">
+    <label>Username</label>
+    <input type="text" [(ngModel)]="username" name="username" class="form-control" style="width: 500px;">
+  </div>
+  <div class="form-group">
+    <label>Email</label>
+    <input type="text" [(ngModel)]="email" name="email" class="form-control" style="width: 500px;">
+  </div>
+  <div class="form-group">
+    <label>Password</label>
+    <input type="password" [(ngModel)]="password" name="password" class="form-control" style="width: 500px;">
+  </div>
+  <div *ngIf="!userValid" class="error text-center">Form not filled...Please try again...</div>
+  <div *ngIf="!emailValid" class="error text-center">Invalid email...Please try again...</div>
+  <div *ngIf="!isAuthenticated" class="error text-center">User already Registered</div>
+  <input type="submit" class="btn btn-primary" value="Submit">
+</form>
+</div>

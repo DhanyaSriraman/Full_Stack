@@ -1,0 +1,9 @@
+.welcome_img{
+        display: flex;
+        justify-content: center;
+        padding-top: 0.5rem;
+        width: 330px;
+        height: 300px;
+        border-radius: 50%;
+        overflow: hidden;
+}
